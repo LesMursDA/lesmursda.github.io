@@ -1,0 +1,155 @@
+/*
+--- Colors ---
+color: #E6AE0F;
+color: #6592a7;
+color: #323637;
+*/
+
+
+/*-- Body --*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Kelly Slab', cursive;
+}
+
+section {
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50vh;
+  min-height: 9em;
+  position: relative;
+  min-height: 1px;
+  width: 100%;
+  float: left;
+}
+
+@media (min-width:500px) {
+  header {
+    position: absolute;
+  }
+  section {
+    width: 50%;
+    height: 100vh;
+  }
+}
+
+h1 {
+  text-align: center;
+  z-index: 10;
+  color: #fff;
+}
+
+header img {
+  /*background-color: #000;*/
+  width: 225px;
+  padding: 3%;
+  text-align: center;
+  z-index: 10;
+}
+
+header .box {
+  background-color: #000;
+  width: 0;
+  height: 0;
+  top: 0px;
+  position: absolute;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 150px solid #000;
+}
+
+/*header .tri {
+  width: 0;
+  height: 0;
+  top: 150px;
+  position: absolute;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 112px solid #fff;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 206px solid #fff;
+}*/
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.img-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(c1.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  padding: 1rem;
+  transition: all .2s ease-in-out;
+}
+
+.img-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(l2.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  padding: 1rem;
+  transition: all .2s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.side-a {
+  background-color: #E6AE0F;
+  opacity: .6;
+}
+
+.side-b {
+  background-color: #6592a7;
+  opacity: .6;
+}
+
+.side-a:hover, .side-b:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 1em;
+  font-size: 4em;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.logo-a, .logo-b {
+  z-index: 10;
+}
