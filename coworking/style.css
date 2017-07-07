@@ -1,0 +1,380 @@
+/*
+--- Colors ---
+color: #E6AE0F;
+color: #6592a7;
+color: #323637;
+*/
+
+
+/*-- Body --*/
+
+.c1 {
+  background-color: #E6AE0F;
+  color: #323637;
+}
+
+.c2 {
+  background: #323637;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  color: #323637;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .image-grid div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/* Navigation */
+
+nav {
+  background-color: #fff;
+  color: #fff;
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  padding: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.items a {
+  padding: 0 15px 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #E6AE0F;
+  font-family: 'Kelly Slab', sans-serif;
+}
+
+.items {
+  justify-content: flex-end;
+  display: flex;
+}
+
+h1 {
+  font-family: 'Kelly Slab', sans-serif;
+  color: #E6AE0F;
+  margin: 0;
+  justify-content: flex-start;
+  display: flex;
+  padding: 0 30px 0 30px;
+}
+
+.logo {
+  height: 50px;
+  width: 65px;
+  background-image: url(logo.svg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+/* Video */
+
+header {
+  margin-top: 65px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+video.bgvid {
+  width: 100%;
+  z-index: -10;
+}
+
+.overlay {
+  background-color: #323637;
+}
+
+
+/* About */
+
+h2 {
+  margin: 0;
+}
+
+
+/* Space and Floor Plans */
+
+section {
+  height: 102vh;
+}
+
+.about {
+  padding: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+}
+
+h2 {
+  font-family: 'Kelly Slab', sans-serif;
+  text-align: left;
+  width: 100%;
+}
+
+
+/* Space image place holder */
+
+.space {
+  height: 92vh;
+  overflow: hidden;
+}
+
+.image-grid div {
+  width: 33.3%;
+  height: 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img1 {
+  background-image: url('assets/img1.jpg');
+}
+
+.img2 {
+  background-image: url('assets/img2.jpg');
+}
+
+.img3 {
+  background-image: url('assets/img3.jpg');
+}
+
+.img4 {
+  background-image: url('assets/img4.jpg');
+}
+
+.img5 {
+  background-image: url('assets/img5.jpg');
+}
+
+.img6 {
+  background-image: url('assets/img6.jpg');
+}
+
+.img7 {
+  background-image: url('assets/img7.jpg');
+}
+
+.img8 {
+  background-image: url('assets/img8.jpg');
+}
+
+.img9 {
+  background-image: url('assets/img9.jpg');
+}
+
+
+/* Prices */
+
+.price {
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan {
+  background-color: #323637;
+  color: #fff;
+  height: 50%;
+  margin: 10px;
+  flex-grow: 1;
+  padding: 6% 7%;
+  font-size: .7em;
+  -webkit-box-shadow: 0 10px 10px -2px rgba(153, 153, 153, 0.4);
+  -moz-box-shadow: 0 10px 10px -2px rgba(153, 153, 153, 0.4);
+  box-shadow: 0 10px 10px -2px rgba(153, 153, 153, 0.4);
+}
+
+.plan-price {
+  text-align: center;
+}
+
+.price h2 {
+  color: #E6AE0F;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.offer-price {
+  font-size: 1.5em;
+}
+
+.usual-price {
+  text-decoration: line-through;
+  font-size: 1.2em;
+}
+
+.plan-features {
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+form {
+  margin-top: 10px;
+}
+
+.button {
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #E6AE0F;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 15px;
+}
+
+.button:hover {
+  background-color: #6592a7;
+  color: #fff;
+}
+
+.offer-price span {
+  font-size: .7em;
+}
+
+.button a {
+  color: #fff;
+}
+
+
+/* Map */
+
+.map {
+  height: 75vh;
+}
+
+#map {
+  height: 100%;
+}
+
+
+/* Section - Contact */
+
+.contact {
+  padding: 10% 20%;
+}
+
+#form-main {
+  margin-top: 40px;
+}
+
+.message-input {
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.message-input:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #E6AE0F;
+  color: #323637;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+#name, #email, #message {
+  background-size: 25px 25px;
+  background-position: 11px 11px;
+  background-repeat: no-repeat;
+}
+
+#name {
+  background-image: url(assets/name.svg);
+}
+
+#email {
+  background-image: url(assets/email.svg);
+}
+
+#message {
+  background-image: url(assets/comment.svg);
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+  background-color: #fff;
+}
+
+#button {
+  width: 250px;
+  border: none;
+  cursor: pointer;
+  background-color: #E6AE0F;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#button:hover {
+  background-color: #6592a7;
+  color: #fff;
+}

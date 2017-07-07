@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="copyright" content="Copyright Naia Lebrun 2016. All Rights Reserved.">
+  <link rel="icon" type="image/svg" href="logo.svg">
+  <meta name="author" content="Naia Lebrun">
+  <meta name="description" content="Les Murs D'Agon - Coworking">
+  <title>Les Murs d'Agon</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Noto+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <h1>Les Murs D'Agon Coworking</h1>
+    <div class="logo"></div>
+    <div class="items">
+      <a href="index.html#about">Concept</a>
+      <a href="index.html#space">Lieux</a>
+      <a href="index.html#price">Tarifs</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <video class="bgvid" autoplay loop>
+      <source src="assets/vid1.m4v" type="video/x-m4v">
+      "Your browser does not support the video tag."
+    </video>
+    <div class="overlay"></div>
+  </header>
+
+  <section class="c1" id="about"><a name='about'></a>
+    <div class="about">
+      <h2>Le Concept</h2>
+      <p>Ouvert depuis juin 2017, cet espace de Coworking (espace de travail collaboratif) vous accueille dans une ancienne maison de maître entièrement rénovée avec goût et respect des caractéristiques architecturales du bâtiment. C’est un lieu de travail
+        unique, chaleureux et calme. Sur 200 m², il offre 15 postes de travail répartis dans des pièces aux ambiances variées, une salle de réunion d'une capacité de 15 personnes, une cabine « aquarium » pour téléphoner, un espace pause-café et une cour
+        extérieure ‘zen’.
+      </p>
+    </div>
+  </section>
+
+  <section class="space c2" id="space"><a name='space'></a>
+    <div class="image-grid">
+      <div class="img1"></div>
+      <div class="img2"></div>
+      <div class="img3"></div>
+      <div class="img4"></div>
+      <div class="img5"></div>
+      <div class="img6"></div>
+      <div class="img7"></div>
+      <div class="img8"></div>
+      <div class="img9"></div>
+    </div>
+  </section>
+
+  <section class="price c1" id="price"><a name='price'></a>
+    <!-- <h2>Les Tarifs</h2> -->
+    <div class="plan">
+      <h2>Coworking</h2>
+      <div class="plan-price">
+        <p class="offer-price">1 mois - 150 €</p>
+        <p class="offer-price">10 jours - 80 €<br><span>carte valable 2 mois</span></p>
+        <p class="offer-price">1 Jour - 10 €</p>
+      </div>
+      <ul class="plan-features">
+        <li>WiFi haut débit sécurisé avec points d’accès multiples</li>
+        <li>Imprimante/ photocopieur N & B</li>
+        <li>Café & thé</li>
+        <li>Parking gratuit</li>
+        <li>Accessibilité PMR</li>
+      </ul>
+      <div class="button"><a href="index.html#mail">Contactez nous</a></div>
+    </div>
+
+    <div class="plan">
+      <h2>Salle de réunion</h2>
+      <div class="plan-price">
+        <p class="offer-price">2 heures - 40 €</p>
+        <p class="offer-price">½ journée - 70 €</p>
+        <p class="offer-price">1 jour- 120 €</p>
+        <p class="offer-price">1 soir - 50 €</p>
+      </div>
+      <ul class="plan-features">
+        <li>WiFi haut débit sécurisé avec points d’accès multiples</li>
+        <li>Café & thé</li>
+        <li>Parking gratuit</li>
+        <li>Accessibilité PMR</li>
+      </ul>
+      <div class="button"><a href="index.html#mail">Contactez nous</a></div>
+    </div>
+  </section>
+
+  <section class="map" id="contact"><a name='contact'></a>
+    <div id="map"></div>
+  </section>
+
+  <section class="contact c2"><a name='mail'></a>
+    <h2>Contactez Nous</h2>
+    <p>Pour plus de renseignements, contactez-nous !<br><b>cowork@lesmursdagon.fr</b></p>
+    <h3>Horaires d’ouverture</h3>
+    <p>Du lundi au vendredi de 9h à 18h<br>Samedi de 10h à 17h</p>
+    <div id="form-main">
+      <form class="form" id="form1" action="mailto:cowork@lesmursdagon.fr" method="post" enctype="text/plain">
+        <p class="name">
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] message-input" placeholder="Nom" id="name" required autofocus/>
+        </p>
+        <p class="email">
+          <input name="email" type="text" class="validate[required,custom[email]] message-input" id="email" placeholder="Email" required autofocus/>
+        </p>
+        <p class="text">
+          <textarea name="text" class="validate[required,length[6,300]] message-input" id="message" placeholder="Message" required autofocus></textarea>
+        </p>
+        <div class="submit">
+          <input type="submit" value="SEND" id="button" />
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- <footer>
+    <p>This responsive web site has been designed, developed, and is maintained by Naia LeBrun.</p>
+  </footer> -->
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQMamq4kEq86am-8BGNBCg61Amrr2vPPc&callback=initMap" async defer></script>
+  <script src="script.js"></script>
+</body>
