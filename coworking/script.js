@@ -187,8 +187,7 @@ function initMap() {
     '<p><b>Address</b><br>' +
     '21 Rue du Feugré<br>' +
     '50230 Agon-Coutainville</p>' +
-    '<p>Situé à Agon-Coutainville, station balnéaire renommée de la côte ouest du Cotentin en Normandie, cet espace de coworking unique permet de combiner travail et détente.' +
-    '<br>A seulement 3h30 de Paris, ce lieu est aussi idéal pour des équipes projet ayant à travailler ensemble ponctuellement et souhaitant sortir d’un quotidien urbain pour s’immerger dans un environnement propice à la créativité. Les Murs d’Agon proposent aussi deux lofts tout équipés de 2 à 4 personnes permettant un hébergement sur place.</p>'
+    '<p><b>Localisation</b><br>h30 de Paris<br>1h10 de Caen</p>' +
     '</div>' +
     '</div>';
 
